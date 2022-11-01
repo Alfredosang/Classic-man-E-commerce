@@ -1,0 +1,8 @@
+.theme{
+    /* background-image: linear-gradient(rgba(91, 0, 0, 0.861), rgba(0, 0, 0, 0.855)), url(https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80); */
+    background-image: linear-gradient(rgba(91, 0, 0, 0.911), rgba(0, 0, 0, 0.871)), url(https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
+    background-position: center;
+    position: relative;
+    background-size: cover;
+}

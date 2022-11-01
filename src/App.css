@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+body{
+  background-color: rgba(253, 238, 216, 0.902);
+}
+.themee{
+  /* background-color: ; */
+  color:rgba(253, 238, 216, 0.902) ;
+  
+}

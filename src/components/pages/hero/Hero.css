@@ -1,0 +1,10 @@
+.clip {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    /* background-color: blue; */
+    background-image: linear-gradient(rgba(91, 0, 0, 0.676), rgb(0, 0, 0)), url(https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    /* background-image: linear-gradient(rgba(91, 0, 0, 0.801), rgb(0, 0, 0)), url(); */
+
+    background-position: center;
+    position: relative;
+    background-size: cover;
+}
