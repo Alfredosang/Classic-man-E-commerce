@@ -6,7 +6,7 @@ import watch from '../asset/pngeg.png'
 import { MdShoppingCart } from 'react-icons/md';
 
 
-const Product = ({product}) => {
+const Product = ({product,addCartItem}) => {
     
 
     
@@ -44,7 +44,7 @@ const Product = ({product}) => {
                                             <h2 className='text-gray-300 '>{product.price.formatted_with_symbol}</h2>
                                         </div>
                                         <div>
-                                            < MdShoppingCart size={30} className='themee hover:text-red-800' />
+                                            < MdShoppingCart size={30} onClick={()=>addCartItem(product.id,1)} className='themee hover:text-red-800' />
                                         </div>
                                     </div>
                                 </div>
