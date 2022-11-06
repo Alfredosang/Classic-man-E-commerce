@@ -7,11 +7,11 @@ import React, { useState, useEffect } from 'react'
 function App() {
   const [product, setProduct] = useState([]);
   const [cart, setCart] = useState({});
-  // const [addToCart, setAddToCart] = useState([])
+
 
     const fetchProduct = async () => {
         const { data } = await commerce.products.list()
-        // const data = await response.json();
+        
 
         setProduct(data)
         console.log(data)
@@ -32,17 +32,29 @@ function App() {
 
     }
 
-    // const emptyCart = async () =>{
-    //     const {data} = await commerce.cart.empty();
-    //     setCart(data);
-    // }
+    const emptyCart = async () =>{
+        const data = await commerce.cart.empty();
+        setCart(data);
+    }
+
+    const removeItem = async (productId) =>{
+      const data = await commerce.cart.remove(productId);
+      setCart(data)
+    }
+
+    const updateQty = async (productId,quantity) => {
+      const data = commerce.cart.update(productId,{quantity});
+      setCart(data);
+
+    }
+
+
 
     useEffect(() => {
         fetchProduct()
         fetchCart()
-        // emptyCart()
     }, [])
-    // console.log(cart);
+    
 
   return (
     <div className="App">
@@ -50,7 +62,12 @@ function App() {
        product={product} 
        cart={cart} 
        addCartItem={addCartItem}
-       fetchCart={fetchCart} />
+       fetchCart={fetchCart}
+       emptyCart={emptyCart}
+       removeItem={removeItem}
+       updateQty={updateQty}
+
+       />
       
     </div>
   );

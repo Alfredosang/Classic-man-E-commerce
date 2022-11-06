@@ -53,7 +53,7 @@ const Product = ({product,addCartItem}) => {
                         }
                     </div>
 
-                    <div className='flex flex-row items-center md:p-10 justify-center'>
+                    <div className='flex flex-row items-center md:mt-32 justify-center'>
                         <div>
                             <img src={watch} className='w-[300px]' alt='watch pic'></img>
                         </div>
