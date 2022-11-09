@@ -15,7 +15,7 @@ const Hero = ({ cart, emptyCart, removeItem, updateQty }) => {
       </div>
 
     )
-  }
+  } 
 
   const FilledCart = () => {
     return (
@@ -37,7 +37,7 @@ const Hero = ({ cart, emptyCart, removeItem, updateQty }) => {
                 </div>
                 <div className='flex md:justify-between'>
 
-                  <div className='flex space-x-7 ml-7'>
+                  <div className='flex space-x-2 md:space-x-7 ml-10'>
                     <div>
                       <button onClick={() => updateQty(product.id, product.quantity + 1)} className='w-10 h-7 rounded-md bg-red-300/70'><h2 className='text-xl text-white text-bold'>+</h2></button>
                     </div>
@@ -48,7 +48,7 @@ const Hero = ({ cart, emptyCart, removeItem, updateQty }) => {
                     </div>
 
                   </div>
-                  <div className='w-10'>
+                  <div className='pl-5 w-16'>
                     <ImBin onClick={() => removeItem(product.id)} size={25} />
                   </div>
 
